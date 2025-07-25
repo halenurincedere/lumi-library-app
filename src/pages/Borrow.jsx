@@ -6,7 +6,7 @@ import "../styles/BorrowForm.css";
 import "../styles/BorrowTable.css";
 import "../styles/GlassBox.css";
 import "../styles/Borrow.css";
-import borrowImage from "../assets/images/authors.png"; // Borrow sayfası için uygun görsel
+import borrowImage from "../assets/images/Authors.png"; // Borrow sayfası için uygun görsel
 
 const Borrow = () => {
   const [borrows, setBorrows] = useState([]); // Ödünç kayıtları listesi

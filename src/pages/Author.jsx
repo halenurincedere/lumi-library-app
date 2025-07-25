@@ -7,7 +7,7 @@ import "../styles/AuthorTable.css";
 import "../styles/GlassBox.css";
 import "../styles/Author.css";
 
-import authorImage from "../assets/images/authors.png";
+import authorImage from "../assets/images/Authors.png";
 
 const Author = () => {
   const [authors, setAuthors] = useState([]);

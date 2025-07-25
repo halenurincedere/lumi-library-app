@@ -6,7 +6,7 @@ import "../styles/CategoryForm.css";
 import "../styles/CategoryTable.css";
 import "../styles/GlassBox.css";
 import "../styles/Author.css"; // Consider renaming or creating a specific CSS for category page for clarity
-import categoryImage from "../assets/images/authors.png";
+import categoryImage from "../assets/images/Authors.png";
 
 const Category = () => {
   const [categories, setCategories] = useState([]);

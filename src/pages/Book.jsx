@@ -7,7 +7,7 @@ import "../styles/BookForm.css";
 import "../styles/BookTable.css";
 import "../styles/GlassBox.css";
 
-import bookImage from "../assets/images/authors.png";
+import bookImage from "../assets/images/Authors.png";
 
 const Book = () => {
   const [books, setBooks] = useState([]);
