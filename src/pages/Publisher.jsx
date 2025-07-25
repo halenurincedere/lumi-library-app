@@ -10,7 +10,7 @@ import "../styles/PublisherForm.css";
 import "../styles/PublisherTable.css";
 import "../styles/GlassBox.css";
 import "../styles/Author.css"; // Reuse Author page styles for uniform look
-import publisherImage from "../assets/images/authors.png";
+import publisherImage from "../assets/images/Authors.png";
 
 const Publisher = () => {
   // State for publishers list
