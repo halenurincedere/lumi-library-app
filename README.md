@@ -1,14 +1,14 @@
 # LibraryApp — Capstone Frontend Project
 
-A production-ready Single Page Application (SPA) built with React, fulfilling the final milestone of the Patika+ Frontend Web Developer Program.  
-Designed to demonstrate robust CRUD operations, seamless UX, and clean architecture in a real-world library management context.
+A production-ready Library Management Application built with React, developed as the final stage of the Patika+ Frontend Web Developer Program.
+Designed to demonstrate robust CRUD operations, user-friendly experience, and clean architectural principles in a real-world library management context.
 
 ---
 
 ## 🔗 Live Demo
 
 View the deployed application here:  
-[Live Site on Netlify](https://library-app.netlify.app)
+[Live Site on Netlify](https://lumi-library-app.netlify.app)
 
 ## 🎥 Project Previews
 
@@ -46,7 +46,7 @@ View the deployed application here:
 ## Setup & Run Locally
 
 ```bash
-git clone https://github.com/halenurincedere/library-app.git
-cd libraryapp
+git clone https://github.com/halenurincedere/lumi-library-app.git
+cd lumi-library-app
 npm install
 npm run dev

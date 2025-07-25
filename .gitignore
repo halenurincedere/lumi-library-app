@@ -399,15 +399,3 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-
-# Node modules
-node_modules/
-
-# Build output
-dist/
-
-# Environment variables
-.env
-
-# Logs
-*.log
