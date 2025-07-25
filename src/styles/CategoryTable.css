@@ -1,0 +1,87 @@
+/* Headings styling for category page */
+.category-page .glass-heading,
+.category-page .centered-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* Center horizontally */
+  justify-content: center;   /* Center vertically */
+  margin: 0rem auto 1rem auto;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+}
+
+/* Table styling */
+.category-table {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.04); /* Transparent background */
+  backdrop-filter: blur(10px);           /* Frosted glass effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-family: 'Playfair Display', serif;
+  color: #ddd;
+}
+
+/* Table header and cell styling */
+.category-table th,
+.category-table td {
+  padding: 14px 18px;
+  text-align: center;
+  font-size: 15px;
+  vertical-align: middle;
+  color: #ddd;
+}
+
+/* Table header background and text */
+.category-table th {
+  background: rgba(255, 255, 255, 0.08);
+  font-weight: 700;
+  color: #f0f0f0;
+}
+
+/* Alternate row background color */
+.category-table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Buttons inside table */
+.category-table button {
+  padding: 6px 12px;
+  border-radius: 14px;
+  font-size: 13px;
+  margin: 0 4px;
+  cursor: pointer;
+  border: none;
+  font-family: 'Playfair Display', serif;
+  background-color: rgba(26, 26, 26, 0.85); /* Dark translucent */
+  color: #dcdcdc;
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Edit button styling - more opaque */
+.category-table button:first-child {
+  opacity: 1;
+  border: 1px solid #333;
+}
+
+.category-table button:first-child:hover {
+  background-color: rgba(51, 51, 51, 0.95);
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* Delete button styling - slightly translucent */
+.category-table .delete-btn {
+  opacity: 0.7;
+  border: 1px solid rgba(51, 51, 51, 0.7);
+}
+
+.category-table .delete-btn:hover {
+  background-color: rgba(51, 51, 51, 0.85);
+  color: #f0ead6;
+  opacity: 1;
+}

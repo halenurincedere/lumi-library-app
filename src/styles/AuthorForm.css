@@ -1,0 +1,53 @@
+/* Author form container styles */
+.author-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.05); /* Slightly transparent background */
+  border-radius: 16px;
+  backdrop-filter: blur(8px); /* Frosted glass effect */
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+  width: fit-content; /* Shrinks to content width */
+}
+
+/* Inputs inside author form */
+.author-form input {
+  padding: 10px 16px;
+  border-radius: 14px;
+  border: 1px solid #444;
+  outline: none;
+  background: rgba(255, 255, 255, 0.08); /* Light translucent background */
+  color: #eee;
+  font-size: 14px;
+  font-family: 'Playfair Display', serif;
+  transition: 0.3s ease;
+}
+
+/* Input focus styles */
+.author-form input:focus {
+  border-color: #aaa;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Submit button styles */
+.author-form button {
+  padding: 10px 20px;
+  border-radius: 16px;
+  background: #e8e4d8;
+  color: #111;
+  font-weight: 900;
+  font-size: 12px;
+  font-family: 'Playfair Display', serif;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.author-form button:hover {
+  background-color: #d4d0c3;
+}

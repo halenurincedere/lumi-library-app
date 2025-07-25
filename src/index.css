@@ -1,0 +1,95 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap');
+
+/* Reset all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Custom scrollbar styles for sleek appearance */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+/* Body styles: dark gradient background and default font */
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(120deg, #0e0e0e, #1a1a1a);
+  color: #f5f5f5;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Headings styles using Playfair Display for elegance */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: #f0e6d2;
+}
+
+/* Paragraph styling for readability */
+p {
+  color: #cfcfcf;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Link styling with smooth color transition */
+a {
+  text-decoration: none;
+  color: #f0e6d2;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #f5d57a;
+}
+
+/* Main container settings for consistent width and padding */
+.app-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section padding for content spacing */
+section {
+  padding: 4rem 0;
+}
+
+/* Button base styling and hover effect */
+button {
+  background-color: #f5d57a;
+  color: #0e0e0e;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: #fff4c4;
+}
+
+/* Responsive typography adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 0.95rem;
+  }
+}

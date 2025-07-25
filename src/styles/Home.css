@@ -1,0 +1,268 @@
+/* General structure */
+.hero-section {
+  background: linear-gradient(145deg, #0f0f0f, #1c1c1c);
+  padding: 60px 20px 160px;
+  text-align: center;
+  min-height: 100vh;
+  position: relative;
+  color: #fdf6e3;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Title container */
+.title-box {
+  z-index: 3;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* Main hero title */
+.hero-title {
+  font-size: 6.5rem;
+  font-weight: 700;
+  color: #f5e9cc;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+/* Content row holding info sections and portrait */
+.content-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+  margin-top: 40px;
+}
+
+/* Boxes for info sections */
+.info-box {
+  max-width: 320px;
+  text-align: left;
+}
+
+/* Images inside info boxes */
+.info-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+/* Text in info boxes */
+.info-text {
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  color: #e0e0e0;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+  text-align: left;
+}
+
+/* Position adjustments for left and right info boxes */
+.left-box {
+  margin-right: -50px;
+}
+
+.right-box {
+  margin-left: -30px;
+}
+
+/* Extra margin on right box's image */
+.right-box .info-image {
+  margin-top: 25px;
+}
+
+/* Tolstoy portrait styling */
+.tolstoy-portrait {
+  width: 600px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.1));
+  transition: transform 0.3s ease;
+  margin-top: -110px;
+}
+
+.tolstoy-portrait:hover {
+  transform: scale(1.05);
+}
+
+/* Sections for writers and books */
+.writer-section,
+.book-section {
+  background: rgba(30, 30, 30, 0.7);
+  padding: 30px 40px;
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 90px rgba(255, 255, 255, 0.05);
+  z-index: 4;
+  width: 100%;
+  max-width: 1600px;
+  text-align: center;
+  overflow-x: auto;
+  margin-top: -10px;
+  position: relative;
+  z-index: 5;
+}
+
+/* Section titles */
+.section-title {
+  font-size: 2.5rem;
+  color: #f5f5f5;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 30px;
+}
+
+/* Container for scrollable area */
+.scroll-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Row holding cards */
+.card-row {
+  display: flex;
+  gap: 30px;
+  padding: 10px 0;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  scroll-behavior: smooth;
+}
+
+.card-row::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+/* Individual cards */
+.card {
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  padding: 15px;
+  width: 180px;
+  flex: 0 0 auto; /* Don't shrink or grow */
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* Card images */
+.card-img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  pointer-events: none; /* Disable drag/select */
+  user-select: none;
+}
+
+/* Card title/name */
+.card-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f2f2f2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Meta info like rating/reviews */
+.card-meta {
+  font-size: 0.85rem;
+  color: #bbb;
+}
+
+/* Scroll buttons */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; /* Show on top */
+  background-color: rgba(255, 255, 255, 0.08);
+  border: none;
+  color: #f5f5f5;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 5px 5px; 
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Show buttons on hover */
+.scroll-container:hover .scroll-btn {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.scroll-btn:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+/* Left and right button positions */
+.scroll-btn.left {
+  left: -12px;
+}
+
+.scroll-btn.right {
+  right: -12px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 992px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .content-row {
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tolstoy-portrait {
+    width: 320px;
+    margin-top: -40px;
+  }
+
+  .info-box {
+    margin: 0;
+    text-align: center;
+  }
+
+  .left-box,
+  .right-box {
+    margin: 0;
+  }
+
+  .info-text {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .writer-section,
+  .book-section {
+    margin: 20px auto 0;
+    width: 100%;
+    max-width: unset;
+    padding: 20px;
+  }
+
+  .card-row {
+    justify-content: flex-start;
+  }
+}

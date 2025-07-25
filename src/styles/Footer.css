@@ -1,0 +1,39 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 1.2rem;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+  font-size: 0.9rem;
+  color: #dcd6c3;
+  z-index: 999;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-quote {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-size: 1rem;
+  color: #e7dfcf;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.4px;
+}
+
+.footer-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: #c9c9c9;
+}
+
+.lumi-brand {
+  color: #e7dfcf;
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+}

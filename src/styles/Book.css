@@ -1,0 +1,51 @@
+.book-page-container {
+  position: relative;
+  padding-bottom: 200px; /* Adjusted for footer */
+  z-index: 1; /* Ensure content is above the background */
+}
+
+.book-background {
+  position: fixed; /* or absolute */
+  bottom: 5.7rem;
+  right: 0;
+  max-width: 500px;
+  z-index: 9999; /* Very high value to keep image on top */
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .book-background {
+    display: none;
+  }
+}
+
+.centered-heading {
+  margin-left: auto; 
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.book-title {
+  font-size: 1.8rem; 
+  font-weight: 700;
+  color: #f5f0eb;
+  margin-bottom: 1rem;
+}
+
+.book-subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #aaa;
+}
+
+.loading {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: #ccc;
+  margin: 2rem 0;
+  font-size: 18px;
+}

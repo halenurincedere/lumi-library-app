@@ -1,0 +1,31 @@
+.category-visual-box {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center;     /* Center content vertically */
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.category-visual {
+  max-width: 280px;
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Dark shadow for depth */
+  transition: transform 0.3s ease; /* Smooth scaling on hover */
+  filter: brightness(0.95); /* Slightly dimmed image */
+}
+
+.category-visual:hover {
+  transform: scale(1.03); /* Slight zoom effect on hover */
+}
+
+.category-loading {
+  display: flex;
+  justify-content: center; /* Center loading text horizontally */
+  align-items: center;     /* Center loading text vertically */
+  height: 150px;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #f0f0f0;
+  animation: fadeIn 0.5s ease-in-out; /* Smooth fade-in animation */
+}

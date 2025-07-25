@@ -1,0 +1,55 @@
+.borrow-page {
+  position: relative;
+  padding-bottom: 200px; /* Prevent content from being overlapped by bottom fixed background */
+  z-index: 1; /* Ensure main content stays above background image */
+}
+
+.borrow-background {
+  position: fixed; /* Fixed position to stay visible on scroll */
+  bottom: 5.7rem;   /* Slightly above the footer */
+  right: 0;         /* Align to right edge */
+  max-width: 500px;
+  z-index: 0;       /* Background behind all content */
+  opacity: 0.9;     /* Slightly transparent */
+  pointer-events: none; /* Prevent interaction */
+}
+
+@media (max-width: 768px) {
+  .borrow-background {
+    display: none; /* Hide background on small screens for better UX */
+  }
+}
+
+/* Centered heading container */
+.centered-heading {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Title style */
+.author-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f5f0eb;
+  margin-bottom: 0.4rem;
+}
+
+/* Subtitle style */
+.author-subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #aaa;
+}
+
+/* Loading message style */
+.loading {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: #ccc;
+  margin: 2rem 0;
+  font-size: 18px;
+}

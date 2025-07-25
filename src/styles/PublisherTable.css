@@ -1,0 +1,111 @@
+/* Header section */
+.publisher-page .glass-heading,
+.publisher-page .centered-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto 1rem auto;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #f4f1ea;
+}
+
+.publisher-page .glass-heading h2 {
+  font-size: 28px; /* Header font size */
+  margin-bottom: 0.5rem;
+}
+
+.publisher-page .glass-heading p {
+  font-size: 16px;
+  color: #ccc;
+  margin-top: 0;
+}
+
+/* Table styles */
+.publisher-table {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-family: 'Playfair Display', serif;
+  color: #ddd;
+}
+
+/* Table cells */
+.publisher-table th,
+.publisher-table td {
+  padding: 14px 18px;
+  text-align: center;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+/* Header cells */
+.publisher-table th {
+  background: rgba(255, 255, 255, 0.08);
+  font-weight: 700;
+  color: #f0f0f0;
+}
+
+/* Alternating row color */
+.publisher-table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Buttons */
+.publisher-table button {
+  padding: 6px 12px;
+  border-radius: 14px;
+  font-size: 13px;
+  margin: 0 4px;
+  cursor: pointer;
+  border: none;
+  font-family: 'Playfair Display', serif;
+  background-color: rgba(26, 26, 26, 0.85); /* dark black with some transparency */
+  color: #dcdcdc;
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Edit button: slightly more opaque */
+.publisher-table button:first-child {
+  opacity: 1;
+  border: 1px solid #333;
+}
+
+.publisher-table button:first-child:hover {
+  background-color: rgba(51, 51, 51, 0.95);
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* Delete button: slightly transparent */
+.publisher-table .delete-btn {
+  opacity: 0.7;
+  border: 1px solid rgba(51, 51, 51, 0.7);
+}
+
+.publisher-table .delete-btn:hover {
+  background-color: rgba(51, 51, 51, 0.85);
+  color: #f0ead6;
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .publisher-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .publisher-table th,
+  .publisher-table td {
+    white-space: nowrap;
+  }
+}

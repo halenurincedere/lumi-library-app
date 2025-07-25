@@ -1,0 +1,53 @@
+/* Category form container styling */
+.category-form {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  gap: 1rem;               /* Space between elements */
+  margin: 2rem auto;       /* Vertical margin and center horizontally */
+  flex-wrap: wrap;         /* Allow wrapping on smaller screens */
+  padding: 1rem 2rem;      /* Inner padding */
+  background: rgba(255, 255, 255, 0.05); /* Semi-transparent white background */
+  border-radius: 16px;
+  backdrop-filter: blur(8px); /* Frosted glass effect */
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05); /* Soft glow */
+  width: fit-content;      /* Shrink to fit content */
+}
+
+/* Input fields styling */
+.category-form input {
+  padding: 10px 16px;
+  border-radius: 14px;
+  border: 1px solid #444;  /* Dark border */
+  outline: none;
+  background: rgba(255, 255, 255, 0.08); /* Slightly transparent */
+  color: #eee;
+  font-size: 14px;
+  font-family: 'Playfair Display', serif; /* Elegant font */
+  transition: 0.3s ease;
+}
+
+/* Input focus effect */
+.category-form input:focus {
+  border-color: #aaa;        /* Lighter border on focus */
+  background: rgba(255, 255, 255, 0.12); /* Slightly lighter background */
+}
+
+/* Submit button styling */
+.category-form button {
+  padding: 10px 20px;
+  border-radius: 16px;
+  background: #e8e4d8;
+  color: #111;
+  font-weight: 600;
+  font-size: 12px;
+  font-family: 'Playfair Display', serif;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Submit button hover effect */
+.category-form button:hover {
+  background-color: #d4d0c3;
+}

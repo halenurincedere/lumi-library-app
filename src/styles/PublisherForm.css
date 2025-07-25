@@ -1,0 +1,45 @@
+/* General form layout: horizontal alignment, centered */
+.publisher-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* spacing between inputs */
+  margin-bottom: 2rem;
+}
+
+/* Input box: rounded corners, light background, readable text */
+.publisher-form input {
+  padding: 10px 14px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: #f0f8ff; /* very light blue tone */
+  color: #333;
+  font-size: 12px;
+}
+
+/* Button style: ice green, smooth transition, elegant font */
+.publisher-form button {
+  padding: 10px 18px;
+  border-radius: 20px;
+  background-color: #b0eacb; /* ice green */
+  color: #111;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect: slightly darker */
+.publisher-form button:hover {
+  background-color: #98d9b9;
+}
+
+/* Spinner container for loading state */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}

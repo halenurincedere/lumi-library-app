@@ -1,0 +1,66 @@
+.author-table {
+  width: 85%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.author-table th,
+.author-table td {
+  padding: 14px 18px;
+  text-align: center;
+  font-size: 15px;
+  color: #ddd;
+  font-family: 'Playfair Display', serif;
+}
+
+.author-table th {
+  background: rgba(255, 255, 255, 0.08);
+  font-weight: 700;
+  color: #f0f0f0;
+}
+
+.author-table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.author-table button {
+  padding: 6px 12px;
+  border-radius: 14px;
+  font-size: 13px;
+  margin: 0 4px;
+  cursor: pointer;
+  border: none;
+  font-family: 'Playfair Display', serif;
+  background-color: rgba(26, 26, 26, 0.85); /* Dark black with slight transparency */
+  color: #dcdcdc;
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Edit button: more opaque */
+.author-table button:first-child {
+  opacity: 1;
+  border: 1px solid #333;
+}
+
+.author-table button:first-child:hover {
+  background-color: rgba(51, 51, 51, 0.95);
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* Delete button: slightly translucent */
+.author-table .delete-btn {
+  opacity: 0.7;
+  border: 1px solid rgba(51, 51, 51, 0.7);
+}
+
+.author-table .delete-btn:hover {
+  background-color: rgba(51, 51, 51, 0.85);
+  color: #f0ead6;
+  opacity: 1;
+}

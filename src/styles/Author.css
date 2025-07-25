@@ -1,0 +1,49 @@
+/* Container for the author (and similar) pages */
+.author-page-container {
+  position: relative;
+  padding-bottom: 200px; /* Prevent content from being overlapped by the bottom image */
+  z-index: 1;
+}
+
+/* Fixed background image aligned to the bottom right near the footer */
+.author-background {
+  position: fixed; /* Fixed positioning */
+  bottom: 5.7rem;  /* Positioned slightly above footer */
+  right: 0rem;     /* Align to right edge */
+  max-width: 500px;
+  z-index: 0;      /* Behind main content */
+  opacity: 0.9;    /* Slight transparency */
+  pointer-events: none; /* Make image non-interactive */
+}
+
+/* Hide the background image on small screens */
+@media (max-width: 768px) {
+  .author-background {
+    display: none;
+  }
+}
+
+/* New centered heading layout */
+.centered-heading {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Title styling */
+.author-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f5f0eb;
+  margin-bottom: 0.4rem;
+}
+
+/* Subtitle styling */
+.author-subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #aaa;
+}
